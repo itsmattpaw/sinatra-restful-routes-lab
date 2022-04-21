@@ -1,0 +1,8 @@
+<!--Page that takes an array of recipes and displays them-->
+<%@list.each do |recipe|%>
+    <h2>
+        <a href="/recipes/<%=recipe.id.to_s%>">
+            <%=recipe.name%>
+        </a>
+    </h2>
+<%end%>
